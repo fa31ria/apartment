@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    
+}
+body{
+    font-family: "Roboto";
+}
+.header{
+    width:1440px;
+   
+   
+   
+}
+.header.header-active{
+    position: fixed;
+    width:100%;
+    top:0%;
+    background: hotpink;
+  
+}
+.header  .row .col-xl-4 .logo a{
+    position: absolute;
+    top:20px;
+    left:50px;
+ 
+ 
+  
+   font-size:28px;
+   color:#013a71;
+   font-weight: bold;
+   text-decoration: none;
+  
+    
+
+}
+.header  .row .col-xl-4 .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.header  .row .col-xl-4 .navbar ul li {
+    margin-left: 20px;
+    list-style: none;
+}
+.header  .row .col-xl-4 .navbar ul li a{
+  
+        font-size: 20px;
+        
+        color: rgb(20, 57, 91);
+        line-height: 1.2;
+        text-align: left;
+        text-decoration: none;
+       
+      
+      
+}
+.header  .row .col-xl-4 .fa-bars{
+    font-size:30px;
+    color:#d27514;
+    display: none;
+}
+.header .container .row .col-xl-4 .navbar ul li a:hover{
+    color:#2289ff;
+
+}
+.header  .row .col-xl-4 .btn .btn1{
+   
+        border-width: 1px;
+        border-color: rgb(112, 112, 112);
+        border-style: solid;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+       
+        width: 120px;
+        height: 44px;
+        outline:none;
+       
+            font-size: 20px;
+           
+            color: rgb(48, 48, 48);
+            line-height: 1.2;
+            text-align: left;
+            margin-left: 6px;
+            margin-top: 15px;
+            
+          
+    
+      
+}
+.header  .row .col-xl-4 .btn .btn1 .fa-search{
+    color:#2289ff;
+    margin-left: 8px;
+}
+
+
+.header  .row .col-xl-4 .btn .btn2{
+  
+        border-width: 2px;
+        border-color: rgb(34, 137, 255);
+        border-style: solid;
+        background-color: rgb(34, 137, 255);
+      
+        width: 95px;
+        height: 54px;
+        margin-left: 40px;
+        outline:none;
+       
+            font-size: 20px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-align: center;
+            margin-left: 160px;
+            margin-top: 10px;
+           
+           
+}
+.search-form{
+    position: fixed;
+    top:20%;
+    left: 15%;
+    display: none;
+   
+}
+.search-form.active{
+    display: block;
+}
+.search-form form{
+    width:1000px;
+    
+  
+}
+.search-form form input{
+    width: 1000px;
+    border:2px solid #d27514;
+    outline:none;
+    padding-left: 20px;
+    color:#2289ff
+
+
+}
+.search-form form input::placeholder{
+    font-size:15px;
+    padding-left:20px ;
+}
+.search-form form .fa-times{
+    position: absolute;
+    top:10%;
+    right:10%;
+    color:#2289ff;
+}
+
+.login-form{
+   position: fixed;
+   top:20%;
+    right:15%;
+    display: none;
+    z-index: 1500;
+  
+}
+.login-form.active{
+    display: block;
+}
+.login-form form{
+    height:330px;
+    width:450px;
+    border:10px solid #013a71;
+    
+ 
+}
+.login-form form input{
+   height:30px;
+   width:300px;
+   margin-top: 25px;
+   margin-left: 20px;
+   padding-left: 20px;
+   outline: none;
+   border: 1px solid green;
+ 
+}
+.login-form form input::placeholder{
+  color:orangered;
+  font-size:15px;
+  padding-left: 20px;
+}
+.login-form form input:focus{
+    border:1px solid #2289ff;
+}
+.login-form form i{
+    position: absolute;
+    top:5%;
+    right:8%;
+    font-size:30px;
+    color:#d27514;
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px){
+    .header  .row .col-xl-4 .fa-bars{
+        display: block;
+    }
+    
+.header  .row .col-xl-4 .navbar ul {
+    position:fixed;
+    top:-100rem;
+    left:35%;
+    display: flex;
+    flex-flow:column;
+    background:#ffffff;
+    border: 3px dotted #2289ff;
+    width:50%;
+    height:25%;
+    
+    
+ 
+    
+}
+
+.header  .row .col-xl-4 .navbar ul.active {
+    top:15%;
+
+}
+.header  .row .col-xl-4 .navbar ul li{
+    margin-top: 20px;
+}
+.header  .row .col-xl-4 .navbar ul li a{
+    display: block;
+    font-size: 30px;
+}
+.fa-times{
+    transform:rotate(360deg);
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
